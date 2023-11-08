@@ -19,12 +19,9 @@ This is a simple Snake game implemented in JavaScript. You can control the snake
 - **Left Arrow**: Move the snake to the left
 - **Right Arrow**: Move the snake to the right
 
-## Code Snippet and Explanation
-
-Here's a code snippet from the game along with an explanation:
 
 
-}
+
 # Snake Game Movement Logic
 
 This code is part of the `moveSnake` function, which is responsible for moving the snake's body and head in a
@@ -83,6 +80,8 @@ Special thanks to the developers of the open-source libraries used in this proje
 [![HTML Badge](https://img.shields.io/badge/-HTML-E34F26?style=for-the-badge&labelColor=black&logo=html5&logoColor=E34F26)](#)
 [![CSS Badge](https://img.shields.io/badge/-CSS-1572B6?style=for-the-badge&labelColor=black&logo=css3&logoColor=1572B6)](#)
 [![JavaScript Badge](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F7DF1E)](#)
+
+## Code Snippet and Explanation
 
 ```javascript
 // moveSnake() function
