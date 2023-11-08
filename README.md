@@ -8,7 +8,8 @@ This is a simple Snake game implemented in JavaScript. You can control the snake
 2. Alternatively, swipe on the screen if you're playing on a touch device.
 
 ## How to Play
-- play my game [here]([URL](https://bachar157.github.io/random-game/))
+- play my game [here](https://bachar157.github.io/random-game/)
+
 
 - Eat apples to grow the snake and increase your score.
 - Avoid running into the walls or into the snake's body, or the game will end.
