@@ -23,33 +23,7 @@ This is a simple Snake game implemented in JavaScript. You can control the snake
 
 Here's a code snippet from the game along with an explanation:
 
-```javascript
-// moveSnake() function
-function moveSnake() {
-  for (let i = snake.body.length - 1; i >= 1; i--) {
-    let snakeSquare = snake.body[i];
-    let nextSnakeSquare = snake.body[i - 1];
 
-    snakeSquare.direction = nextSnakeSquare.direction;
-
-    repositionSquare(snakeSquare, nextSnakeSquare.row, nextSnakeSquare.column);
-  }
-
-  /* snake.head.nextDirection is set using keyboard input and only changes if the
-  next direction is perpendicular to snake.head.direction. This prevents the 
-  snake from turning back on itself if multiple commands are issued before the
-  next update.
-  
-  snake.head.direction is then only set once at the moment the snake is prepared
-  to move forward
-  */
-  snake.head.direction = snake.head.nextDirection;
-  if (snake.head.direction === "left") { snake.head.column--; }
-  else if (snake.head.direction === "right") { snake.head.column++; }
-  else if (snake.head.direction === "up") { snake.head.row--; }
-  else if (snake.head.direction === "down") { snake head.row++; }
-
-  repositionSquare(snake.head, snake.head.row, snake.head.column);
 }
 # Snake Game Movement Logic
 
@@ -106,7 +80,34 @@ Special thanks to the developers of the open-source libraries used in this proje
 
 ## Contact# snake-game
 # snake-game
-
 [![HTML Badge](https://img.shields.io/badge/-HTML-E34F26?style=for-the-badge&labelColor=black&logo=html5&logoColor=E34F26)](#)
 [![CSS Badge](https://img.shields.io/badge/-CSS-1572B6?style=for-the-badge&labelColor=black&logo=css3&logoColor=1572B6)](#)
 [![JavaScript Badge](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F7DF1E)](#)
+
+```javascript
+// moveSnake() function
+function moveSnake() {
+  for (let i = snake.body.length - 1; i >= 1; i--) {
+    let snakeSquare = snake.body[i];
+    let nextSnakeSquare = snake.body[i - 1];
+
+    snakeSquare.direction = nextSnakeSquare.direction;
+
+    repositionSquare(snakeSquare, nextSnakeSquare.row, nextSnakeSquare.column);
+  }
+
+  /* snake.head.nextDirection is set using keyboard input and only changes if the
+  next direction is perpendicular to snake.head.direction. This prevents the 
+  snake from turning back on itself if multiple commands are issued before the
+  next update.
+  
+  snake.head.direction is then only set once at the moment the snake is prepared
+  to move forward
+  */
+  snake.head.direction = snake.head.nextDirection;
+  if (snake.head.direction === "left") { snake.head.column--; }
+  else if (snake.head.direction === "right") { snake.head.column++; }
+  else if (snake.head.direction === "up") { snake.head.row--; }
+  else if (snake.head.direction === "down") { snake head.row++; }
+
+  repositionSquare(snake.head, snake.head.row, snake.head.column);
