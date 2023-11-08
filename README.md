@@ -53,31 +53,44 @@ function moveSnake() {
 }
 # Snake Game Movement Logic
 
-This code is part of the `moveSnake` function, which is responsible for moving the snake's body and head in a classic Snake game. This explanation provides a breakdown of the core logic involved.
+This code is part of the `moveSnake` function, which is responsible for moving the snake's body and head in a
+ classic Snake game. This explanation provides a breakdown of the core logic involved.
 
 ## Iterating Through Snake s Body
-The code iterates through the snakes body, starting from the tail and progressing towards the head. This iteration is essential for propagating the snakes movement from one segment to the next.
+The code iterates through the snakes body, starting from the tail and progressing towards the head.
+ This iteration is essential for propagating the snakes movement from one segment to the next.
 
 ## Updating Segment Positions
-During the iteration, the code updates the position of each snake segment based on the direction of the segment in front of it. In a typical Snake game, each segment of the snake follows the one in front of it, mimicking its position and direction.
+During the iteration, the code updates the position of each snake segment based on the direction of the segment
+ in front of it. In a typical Snake game, each segment of the snake follows the one in front of it, mimicking its
+position and direction.
 
 ## User Input for Direction
-User input plays a crucial role in determining the direction of the snakes head. The code checks for user input to change `snake.head.nextDirection`. However, its important to note that this change only occurs if the new direction is perpendicular to the current direction. This condition prevents the snake from abruptly turning back on itself if multiple commands are issued in quick succession before the next update.
+User input plays a crucial role in determining the direction of the snakes head. The code checks for user input to
+ change `snake.head.nextDirection`. However, its important to note that this change only occurs if the new
+ direction is perpendicular to the current direction. This condition prevents the snake from abruptly
+ turning back on itself if multiple commands are issued in quick succession before the next update.
 
 ## Updating Head Direction and Position
-Once the `snake.head.nextDirection` is set if it's a valid perpendicular direction), the code updates the `snake.head.direction` to match the `nextDirection`. This is a key step in preparing the snake for its next move. After setting the direction, the code proceeds to update the position of the snake's head accordingly, effectively moving the snake forward in the selected direction.
+Once the `snake.head.nextDirection` is set if it's a valid perpendicular direction), the code updates the `snake.head.direction` to match the `nextDirection`. This is a key step in preparing the snake for its
+ next move. After setting the direction, the code proceeds to update the position of the snake's
+head accordingly, effectively moving the snake forward in the selected direction.
 
-This code and explanation are vital for controlling the snake's movement in the game, ensuring that it responds to user input and moves in a consistent and intuitive manner while also preventing undesirable, self-contradictory movements.
+This code and explanation are vital for controlling the snake's movement in the game, ensuring that it
+ responds to user input and moves in a consistent and intuitive manner while also preventing undesirable, self-contradictory movements.
 
 ## Game Features
 
 Here are some additional features of the Snake Game:
 
-- **High Score:** The game keeps track of your high score and displays it on the screen. Try to beat your own record!
+- **High Score:** The game keeps track of your high score and displays it on the screen. Try to beat your
+ own record!
 - **Responsive Design:** The game is designed to work on both desktop and mobile devices. Play on the go!
-- **Touch Controls:** If you're playing on a touchscreen device, you can swipe to control the snake, making it a smooth experience.`
+- **Touch Controls:** If you're playing on a touchscreen device, you can swipe to control the snake, making
+it a smooth experience.`
 
-Enjoy the Game! Have fun playing this classic Snake game! If you achieve a high score, your achievement will be displayed as the "High Score."
+Enjoy the Game! Have fun playing this classic Snake game! If you achieve a high score, your achievement
+will be displayed as the "High Score."
 
 ## License
 
@@ -94,3 +107,6 @@ Special thanks to the developers of the open-source libraries used in this proje
 ## Contact# snake-game
 # snake-game
 
+[![HTML Badge](https://img.shields.io/badge/-HTML-E34F26?style=for-the-badge&labelColor=black&logo=html5&logoColor=E34F26)](#)
+[![CSS Badge](https://img.shields.io/badge/-CSS-1572B6?style=for-the-badge&labelColor=black&logo=css3&logoColor=1572B6)](#)
+[![JavaScript Badge](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F7DF1E)](#)
